@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <stdlib.h>
 #include <emmintrin.h>
 #include <immintrin.h>
 
@@ -371,8 +370,8 @@ void ctr_decrypt(__m128i *expand_key, uint8_t *IV, uint32_t len, FILE *in, FILE 
 int main(void)
 {
 #ifndef ONLINE_JUDGE
-    FILE *in = fopen("aes_ctr_i2.bin", "rb");
-    FILE *out = fopen("aeso.bin", "wb");
+    FILE *in = fopen("./samples/aesi.bin", "rb");
+    FILE *out = fopen("./samples/aeso.bin", "wb");
 #else
 #define in stdin
 #define out stdout

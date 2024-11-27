@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <stdlib.h>
 #include <emmintrin.h>
 #include <immintrin.h>
 
@@ -358,8 +357,8 @@ void decrypt(uint8_t state[4][4], uint8_t key[4][4], uint8_t last[4][4], uint8_t
 int main(void)
 {
 #ifndef ONLINE_JUDGE
-    FILE *in = fopen("aes_cbc_i2.bin", "rb");
-    FILE *out = fopen("aeso.bin", "wb");
+    FILE *in = fopen("./samples/aesi.bin", "rb");
+    FILE *out = fopen("./samples/aeso.bin", "wb");
 #else
 #define in stdin
 #define out stdout
